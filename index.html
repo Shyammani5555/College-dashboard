@@ -2,8 +2,31 @@
 <html>
 <head>
     <title>College Dashboard</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Welcome to College Dashboard</h1>
+    <h1>Bangalore Colleges</h1>
+
+    <div class="college-grid">
+
+        <div class="card" onclick="openCollege('RVCE')">
+            <img src="https://via.placeholder.com/300x150" alt="RV College">
+            <h3>RV College of Engineering</h3>
+        </div>
+
+        <div class="card" onclick="openCollege('BMSCE')">
+            <img src="https://via.placeholder.com/300x150" alt="BMS">
+            <h3>BMS College of Engineering</h3>
+        </div>
+
+        <div class="card" onclick="openCollege('PES')">
+            <img src="https://via.placeholder.com/300x150" alt="PES">
+            <h3>PES University</h3>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
