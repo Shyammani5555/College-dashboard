@@ -36,10 +36,10 @@ h1 {
   align-items: center;
   gap: 20px;
   background-color: #fff;
-  padding: 10px 20px;           /* smaller height */
-  border-radius: 50px / 25px;   /* half-circle curves on left & right edges */
+  padding: 10px 20px;           
+  border-radius: 50px / 25px; 
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   cursor: pointer;
   transition: transform 0.3s;
-  text-align: left;             /* align content to left for better layout */
+  text-align: left;          
 }
