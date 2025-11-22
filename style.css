@@ -36,10 +36,23 @@ h1 {
   align-items: center;
   gap: 20px;
   background-color: #fff;
-  padding: 10px 20px;           
-  border-radius: 50px / 25px; 
+  padding: 10px 20px;           /* smaller height */
+  border-radius: 50px / 25px;   /* half-circle curves on left & right edges */
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   cursor: pointer;
   transition: transform 0.3s;
-  text-align: left;          
+  text-align: left;             /* align content to left */
 }
+
+.card img {
+  width: 120px;
+  height: 80px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
