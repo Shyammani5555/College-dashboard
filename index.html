@@ -1,32 +1,149 @@
 <!DOCTYPE html>
+
 <html>
 <head>
     <title>College Dashboard</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+```
+    h1 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .college-grid {
+        display: flex;
+        flex-direction: column; /* One per row */
+        gap: 20px;
+    }
+
+    .card {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        background-color: #fff;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        cursor: pointer;
+        transition: transform 0.2s;
+    }
+
+    .card:hover {
+        transform: scale(1.02);
+    }
+
+    .card img {
+        width: 150px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    .card h3 {
+        margin: 0;
+    }
+</style>
+```
+
 </head>
 
 <body>
     <h1>Bangalore Colleges</h1>
 
-    <div class="college-grid">
+```
+<div class="college-grid">
 
-        <div class="card" onclick="openCollege('RVCE')">
-            <img src="https://via.placeholder.com/300x150" alt="RV College">
-            <h3>RV College of Engineering</h3>
-        </div>
-
-        <div class="card" onclick="openCollege('BMSCE')">
-            <img src="https://via.placeholder.com/300x150" alt="BMS">
-            <h3>BMS College of Engineering</h3>
-        </div>
-
-        <div class="card" onclick="openCollege('PES')">
-            <img src="https://via.placeholder.com/300x150" alt="PES">
-            <h3>PES University</h3>
-        </div>
-
+    <div class="card" onclick="openCollege('RVCE')">
+        <img src="https://via.placeholder.com/300x150" alt="RV College">
+        <h3>R.V. College of Engineering (RVCE)</h3>
     </div>
 
-    <script src="script.js"></script>
+    <div class="card" onclick="openCollege('BMSCE')">
+        <img src="https://via.placeholder.com/300x150" alt="BMS">
+        <h3>BMS College of Engineering (BMSCE)</h3>
+    </div>
+
+    <div class="card" onclick="openCollege('MSRIT')">
+        <img src="https://via.placeholder.com/300x150" alt="MSRIT">
+        <h3>Ramaiah Institute of Technology (MSRIT)</h3>
+    </div>
+
+    <div class="card" onclick="openCollege('DSCE')">
+        <img src="https://via.placeholder.com/300x150" alt="DSCE">
+        <h3>Dayananda Sagar College of Engineering (DSCE)</h3>
+    </div>
+
+    <div class="card" onclick="openCollege('BIT')">
+        <img src="https://via.placeholder.com/300x150" alt="BIT">
+        <h3>Bangalore Institute of Technology (BIT)</h3>
+    </div>
+
+    <div class="card" onclick="openCollege('SirMVIT')">
+        <img src="https://via.placeholder.com/300x150" alt="Sir MVIT">
+        <h3>Sir M. Visvesvaraya Institute of Technology (Sir MVIT)</h3>
+    </div>
+
+    <div class="card" onclick="openCollege('BMSIT')">
+        <img src="https://via.placeholder.com/300x150" alt="BMSIT">
+        <h3>BMS Institute of Technology and Management (BMSIT)</h3>
+    </div>
+
+    <div class="card" onclick="openCollege('DrAIT')">
+        <img src="https://via.placeholder.com/300x150" alt="Dr. Ambedkar">
+        <h3>Dr. Ambedkar Institute of Technology</h3>
+    </div>
+
+    <div class="card" onclick="openCollege('CMRIT')">
+        <img src="https://via.placeholder.com/300x150" alt="CMRIT">
+        <h3>CMR Institute of Technology (CMRIT)</h3>
+    </div>
+
+    <div class="card" onclick="openCollege('Acharya')">
+        <img src="https://via.placeholder.com/300x150" alt="Acharya">
+        <h3>Acharya Institute of Technology</h3>
+    </div>
+
+    <div class="card" onclick="openCollege('DSATM')">
+        <img src="https://via.placeholder.com/300x150" alt="DSATM">
+        <h3>Dayananda Sagar Academy of Technology and Management (DSATM)</h3>
+    </div>
+
+    <div class="card" onclick="openCollege('GAT')">
+        <img src="https://via.placeholder.com/300x150" alt="GAT">
+        <h3>Global Academy of Technology (GAT)</h3>
+    </div>
+
+    <div class="card" onclick="openCollege('MVJ')">
+        <img src="https://via.placeholder.com/300x150" alt="MVJ">
+        <h3>MVJ College of Engineering</h3>
+    </div>
+
+    <div class="card" onclick="openCollege('NewHorizon')">
+        <img src="https://via.placeholder.com/300x150" alt="New Horizon">
+        <h3>New Horizon College of Engineering</h3>
+    </div>
+
+    <div class="card" onclick="openCollege('JSS')">
+        <img src="https://via.placeholder.com/300x150" alt="JSS">
+        <h3>JSS Academy of Technical Education</h3>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+<script>
+    function openCollege(collegeName) {
+        alert("You clicked on " + collegeName);
+    }
+</script>
+```
+
 </body>
 </html>
